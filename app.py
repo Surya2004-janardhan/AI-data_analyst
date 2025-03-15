@@ -25,9 +25,14 @@ uploaded_file = st.sidebar.file_uploader("📂 Upload a CSV File", type=["csv"])
 if uploaded_file:
     df_cleaned = main.process_data(uploaded_file)  # Directly process the uploaded file (don't read it again)
     st.success("✅ File Uploaded and Processed! Ready for Analysis.")
+    df = pd.read_csv(uploaded_file)  # Read uploaded CSV as a DataFrame
+    # st.success("✅ File Uploaded Successfully!")
+
+    st.write("📊 **Preview of Uploaded Data:**")
+    st.write(df.head())  
 
     st.write("📊 **Data Summary:**")
-    st.write(uploaded_file.head())  # Display first few rows of cleaned data
+    # st.write(uploaded_file.head())  # Display first few rows of cleaned data
 
     # Get AI-generated analysis based on the cleaned data
     st.write(main.generate_ai_analysis(df_cleaned))
