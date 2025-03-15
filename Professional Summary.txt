@@ -1,0 +1,38 @@
+Professional Summary
+Full-Stack Developer Skilled in React.js, Node.js, and Python, with experience in MongoDB, SQL,
+and Firebase, specializing in full-stack web development. Passionate about building scalable, highperformance applications and integrating RESTful APIs. Proficient in state management, backend
+optimization, and responsive UI/UX design to enhance user experience and application efficiency.
+AI-ML EngineerSpecializing in machine learning, deep learning, and AI model deployment for scalable solutions, with expertise in Retrieval-Augmented Generation (RAG) and LangChain. Skilled in
+NLP and large-scale data processing using TensorFlow, PyTorch, Hugging Face, and LangFlow for
+AI-driven applications. MLOps, and retrieval systems using FAISS.Passionate about optimizing AI
+models, automation, and real-time deployment for performance and scalability.
+Education
+Aditya college of engineering 2022 – 2026
+B.Tech - AIML Andhra Pradesh, India
+Projects
+Meal Mate React + Vite, Node.js, MongoDB, Bootstrap, JWT
+• Developed a full-stack food ordering and iNote application using the MERN stack, enabling seamless
+CRUD operations and secure Razorpay payments.
+• Implemented and optimized RESTful APIs for robust authentication, authorization with JWT, and
+efficient data handling for enhanced performance and security.
+• Optimized MongoDB queries and RESTful API responses for improved performance, scalability, and
+real-time order tracking.
+AI Data Analyst Tensorflow, Matplotlib, FAISS, RAG Streamlit
+• Designed and implemented an AI-driven data analysis platform, deployed on Streamlit, capable of
+automatically processing and analyzing any CSV file using machine learning models and deep learning
+neural networks.
+• Developed a retrieval-augmented generation (RAG) system with FAISS-based memory storage, enabling efficient data retrieval and contextual AI responses.
+• Built a scalable backend with AI-powered analysis using Groq, optimizing real-time data processing.
+Auto code completion Javascript, Node.js, VS Code API
+• Developed and published the Auto-Gear-1 VS Code extension in the Microsoft VS Code Marketplace,
+providing AI-powered auto code completion and intelligent suggestions.
+• Engineered an optimized extension with efficient API interactions, enhancing coding speed, accuracy,
+and developer productivity within the VS Code editor.
+Technical Skills
+Languages: Python, JavaScript, Java, C, R
+Frontend: React.js, HTML, CSS, Tailwind CSS, Material-UI, Redux
+Backend: Node.js, Express.js, FastAPI, REST APIs
+Databases: MySQL, MongoDB, SQL
+AI Machine Learning: TensorFlow, PyTorch, Scikit-learn, Keras, OpenAI, NLP, Computer Vision
+AI Frameworks: LangChain, LangFlow, FAISS, ChromaDB, (RAG)
+Developer Tools: Git, GitHub, JWT, OAuth 2.0, Firebase, Postman, Visual Studio Cod

@@ -12,7 +12,7 @@ client = Groq(api_key=os.environ["GROQ_API_KEY"])
 
 # ✅ Function to Process Data
 def process_data(uploaded_file):
-    """Handles file processing when called from app.py."""
+    """Handles filae processing when called from app.py."""
     try:
         # ✅ Correct way to read uploaded file
         df = pd.read_csv(uploaded_file)  # Convert file to DataFrame directly
