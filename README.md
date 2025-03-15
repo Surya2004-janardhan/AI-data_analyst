@@ -54,6 +54,6 @@ pip install -r requirements.txt
 ```  
 3️⃣ Run the AI Data Analyst  
 ```bash
-python main.py
+python app.py
 ```  
 4️⃣ Upload your **CSV file** and let AI analyze it!  
