@@ -18,20 +18,24 @@ client = Groq(api_key=GROQ_API_KEY)
 st.title("📊 AI Data Analyst")
 st.sidebar.header("🔍 Select Task")
 
-# 🚀 Upload File
+# # 🚀 Upload File
 uploaded_file = st.sidebar.file_uploader("📂 Upload a CSV File", type=["csv"])
 
 # ✅ Process File
 if uploaded_file:
-    df_cleaned = main.process_data(uploaded_file)  # Directly process the uploaded file (don't read it again)
-    st.success("✅ File Uploaded and Processed! Ready for Analysis.")
-    df = pd.read_csv(uploaded_file)  # Read uploaded CSV as a DataFrame
-    # st.success("✅ File Uploaded Successfully!")
+    # Read the uploaded file first
+    df = pd.read_csv(uploaded_file)  # Convert file-like object to DataFrame
+    
+    st.success("✅ File Uploaded Successfully!")
 
+    # Show preview of the uploaded data
     st.write("📊 **Preview of Uploaded Data:**")
     st.write(df.head())  
 
-    st.write("📊 **Data Summary:**")
+    # Now process the data
+    df_cleaned = main.process_data(df)  # Process the already-read DataFrame
+    st.success("✅ File Processed! Ready for Analysis.")
+
     # st.write(uploaded_file.head())  # Display first few rows of cleaned data
 
     # Get AI-generated analysis based on the cleaned data
