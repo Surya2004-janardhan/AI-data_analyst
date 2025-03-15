@@ -10,17 +10,15 @@ from groq import Groq
 import datavisualization
 from data_preprocessing import preprocess_data  # Import preprocessing function
 
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
+client = Groq(api_key=GROQ_API_KEY)
 # 🔹 Secure API Key
-os.environ["GROQ_API_KEY"] = "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"
-
-# 🔹 Initialize Groq Client
-client = Groq(api_key=os.environ["GROQ_API_KEY"])
 
 # 🔹 Streamlit UI
 st.title("📊 AI Data Analyst")
 st.sidebar.header("🔍 Select Task")
 
-# 🚀 Upload File
+# # 🚀 Upload File
 uploaded_file = st.sidebar.file_uploader("📂 Upload a CSV File", type=["csv"])
 
 # ✅ Process File
@@ -33,6 +31,7 @@ if uploaded_file:
 
     # Get AI-generated analysis based on the cleaned data
     st.write(main.generate_ai_analysis(df_cleaned))
+
 
     # 🎯 Select Task
     # 🚀 Select Task

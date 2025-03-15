@@ -5,10 +5,11 @@ from groq import Groq
 from data_preprocessing import preprocess_data  # Import preprocessing function
 
 # 🔹 Secure API Key
-# os.environ["GROQ_API_KEY"] = "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"
+# os.environ["GROQ_API_KEY"] = "blahblah"
 
 # 🔹 Initialize Groq Client
-client = Groq(api_key=os.environ["GROQ_API_KEY"])
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
+client = Groq(api_key=GROQ_API_KEY)
 
 # ✅ Function to Process Data
 def process_data(uploaded_file):
