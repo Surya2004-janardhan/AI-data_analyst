@@ -27,7 +27,7 @@ if uploaded_file:
     st.success("✅ File Uploaded and Processed! Ready for Analysis.")
 
     st.write("📊 **Data Summary:**")
-    st.write(df_cleaned.head())  # Display first few rows of cleaned data
+    st.write(uploaded_file.head())  # Display first few rows of cleaned data
 
     # Get AI-generated analysis based on the cleaned data
     st.write(main.generate_ai_analysis(df_cleaned))
