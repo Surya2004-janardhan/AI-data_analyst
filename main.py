@@ -16,7 +16,7 @@ def process_data(uploaded_file):
     """Handles file processing when called from app.py."""
     try:
         # ✅ Correct way to read uploaded file
-        df = pd.read_csv(uploaded_file)  # Convert file to DataFrame directly
+        # df = pd.read_csv(uploaded_file)  # Convert file to DataFrame directly
         df_clean = preprocess_data(df)   # Process the data (pass DataFrame)
         print(type(df_clean), "is the cleaned data")  # Preprocess data
         return df_clean  # Return cleaned DataFrame
