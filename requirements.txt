@@ -1,0 +1,24 @@
+# Core Dependencies
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+shap
+xgboost
+lightgbm
+
+# Clustering & Anomaly Detection
+faiss-cpu  # For memory storage in RAG
+scipy
+
+# Streamlit (for UI)
+streamlit
+
+# Deep Learning
+tensorflow
+keras
+
+# API Interaction
+groq  # For AI analysis integration
+

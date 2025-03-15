@@ -1,0 +1,53 @@
+# Ignore Python virtual environments
+venv/
+env/
+*.pyc
+__pycache__/
+# Virtual environment
+newenv/
+venv/
+env/
+
+myenv/
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore FAISS index files
+*.index
+*.pkl
+
+faiss_memory.index
+faiss_memory.index.pkl
+faiss_memory.index.pkl
+# Ignore datasets and large files
+*.csv
+*.tsv
+*.json
+*.parquet
+*.h5
+*.hdf5
+
+# Ignore logs and cache
+logs/
+*.log
+cache/
+*.cache/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore large model files (if any)
+*.h5
+*.ckpt
+*.pth
+*.pt
+*.tflite
